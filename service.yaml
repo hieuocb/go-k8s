@@ -6,5 +6,7 @@ spec:
   selector:
     app: go-k8s
   ports:
-  - port: 8080
+  - protocol: TCP
+    port: 8080
     targetPort: 8080
+  type: LoadBalancer
