@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: go-k8s
 spec:
+  replicas: 3
   selector:
     matchLabels:
       app: go-k8s
