@@ -1,0 +1,12 @@
+replicaCount: 3
+
+image:
+  pullPolicy: IfNotPresent
+
+
+service:
+  type: ClusterIP
+  port: 8080
+
+application:
+  name: go-k8s
